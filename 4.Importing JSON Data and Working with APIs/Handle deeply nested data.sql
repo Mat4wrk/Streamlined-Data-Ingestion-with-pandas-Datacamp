@@ -1,7 +1,6 @@
 # Flatten businesses records and set underscore separators
 flat_cafes = json_normalize(data["businesses"],
                   	    sep="_")
-
 # View the data
 print(flat_cafes.head())
 
@@ -10,7 +9,6 @@ print(flat_cafes.head())
 flat_cafes = json_normalize(data["businesses"],
                             sep="_",
                     	    record_path="categories")
-
 # View the data
 print(flat_cafes.head())
 
@@ -25,6 +23,5 @@ flat_cafes = json_normalize(data["businesses"],
                               	  ["coordinates", "latitude"], 
                           	  ["coordinates", "longitude"]],
                     	    meta_prefix="biz_")
-
 # View the data
 print(flat_cafes.head())
