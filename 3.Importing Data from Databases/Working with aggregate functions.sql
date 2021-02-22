@@ -15,7 +15,7 @@ print(weather_by_month)
 # Create a query to get month, max tmax, and min tmin by month
 query = """
 SELECT month, 
-	   MAX(tmax), 
+	MAX(tmax), 
         MIN(tmin)
   FROM weather 
  GROUP BY month;
