@@ -1,6 +1,4 @@
 # Load json_normalize()
-import pandas as pd
-import requests
 from pandas.io.json import json_normalize
 
 # Isolate the JSON data from the API response
